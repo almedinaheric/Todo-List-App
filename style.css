@@ -1,0 +1,132 @@
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    padding-top: 48px;
+    background-color: #f6f6f6;
+}
+
+.wrapper{
+    width: 50%;
+    margin: 0 auto;
+    padding: 64px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.newTaskPart{
+    display: inline;
+    margin: 0px 8px;
+}
+
+.new-task, .done-task{
+    width: 90%;
+    min-height: 40%;
+    max-height: 50%;
+    overflow-y: auto;
+}
+
+.new-task p, .done-task p{
+    color: #555555;
+}
+
+.inputButton{
+    margin: 32px 0px;
+    text-align: center;
+}
+
+.inputButton input{
+    border: none;
+    border-bottom: 3px solid #00303F;
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin-right: 8px;
+}
+
+.inputButton input:focus{
+    outline: none;
+}
+
+.inputButton button{
+    padding: 4px 16px;
+    border-color: #00303F;
+    background-color: #00303F;
+    color: white;
+    border-radius: 4px;
+}
+
+.inputButton button:hover{
+    color: #00303F;
+    background-color: white;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 48px;
+    color: #00303F;
+}
+
+.task-container{
+    margin: 16px 0px;
+}
+
+.empty-new-task{
+    border-radius: 4px;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #b3c4cc;
+    margin: 8px auto;
+}
+
+.empty-new-task #description{
+    width: 60%;
+    background-color: transparent;
+    border: none;
+    color: #cb0044;
+    font-size:medium;
+    font-weight: 600;
+}
+
+.empty-new-task #description:disabled{
+    color: #09394f;
+}
+
+.empty-new-task #description:focus{
+    outline: none;
+}
+
+.empty-new-task button{
+    width: 10%;
+    padding: 4px;
+    border: 1px solid #00303F;
+    border-radius: 4px;
+    background-color: #dddddd;
+    color: #00303F;
+    font-weight: 500;
+}
+
+.empty-new-task button:hover{
+    background-color: #00303F;
+    color: white;
+}
+
+.empty-new-task button:disabled{
+    background-color: #3a3a3a;
+    color: rgb(174, 173, 173);
+}
+
+#newTask, #doneTask{
+    height: 50%;
+}
